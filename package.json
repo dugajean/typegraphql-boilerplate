@@ -1,0 +1,47 @@
+{
+  "name": "typegraphql-boilerplate",
+  "version": "1.0.0",
+  "description": "Typescript GraphQL Boilerplate",
+  "main": "build/index.js",
+  "repository": "https://github.com/dugajean/typegraphql-boilerplate/",
+  "author": "dugajean",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/server.ts",
+    "build": "yarn format && tsc",
+    "start": "node build/server.js",
+    "format": "eslint src/* --fix",
+    "lint": "eslint src/*",
+    "test": "jest"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.9.16",
+    "class-validator": "^0.11.0",
+    "dotenv-flow": "^3.1.0",
+    "express": "^4.17.1",
+    "graphql": "^14.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^0.17.6",
+    "typeorm": "^0.2.22"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^13.7.0",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "@types/jest": "^25.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-jest": "^23.6.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.6.2",
+    "ts-jest": "^25.1.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
+  }
+}
